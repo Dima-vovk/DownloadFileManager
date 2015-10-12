@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="147.0" prefWidth="278.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.DownloadControler">
+   <children>
+      <Button fx:id="dlFile" layoutX="198.0" layoutY="42.0" mnemonicParsing="false" onAction="#startDownload" prefHeight="25.0" prefWidth="72.0" text="Download" />
+      <TextField fx:id="filePuth" layoutX="14.0" layoutY="42.0" promptText="File puth" />
+      <CheckBox fx:id="chName" layoutX="14.0" layoutY="75.0" mnemonicParsing="false" onAction="#actionName" selected="false" text="Change name" />
+      <TextField fx:id="fileName" Text="Default" layoutX="14.0" layoutY="100.0" />
+      <Label layoutX="15.0" layoutY="17.0" text="File path:" />
+      <Button layoutX="198.0" layoutY="78.0" mnemonicParsing="false" onAction="#cansel" prefHeight="25.0" prefWidth="72.0" text="Cancel" />
+   </children>
+</AnchorPane>

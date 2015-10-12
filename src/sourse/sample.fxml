@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="374.0" minWidth="300.0" prefHeight="374.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controler.MainControler">
+   <children>
+      <AnchorPane prefHeight="0.0" prefWidth="613.0">
+         <children>
+            <Button fx:id="mainDlBtn" layoutX="501.0" layoutY="27.0" mnemonicParsing="false" onAction="#mainDl" prefHeight="25.0" prefWidth="116.0" text="Download" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="27.0" />
+            <TextField fx:id="txtPathInput" layoutX="67.0" layoutY="27.0" minWidth="150.0" prefHeight="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="27.0" />
+            <Label layoutX="45.0" layoutY="6.0" text="Введите URL адресс файла:" AnchorPane.topAnchor="0.0" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <ProgressBar fx:id="prog" layoutX="47.0" layoutY="5.0" progress="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="-5.0" AnchorPane.topAnchor="-5.0" />
+            <ProgressIndicator id="indicator" fx:id="progInd" layoutX="265.0" layoutY="37.0" prefHeight="18.0" prefWidth="20.0" progress="0.0" styleClass="label-bright" AnchorPane.leftAnchor="270.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="20.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </AnchorPane>
+      <AnchorPane minHeight="30.0" prefHeight="20.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="38.0" layoutY="32.0" text="Последние загрузки:" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <Label layoutX="383.0" layoutY="8.0" text="Информация о файле:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="160.0" prefWidth="613.0">
+         <children>
+            <Label layoutX="311.0" layoutY="20.0" text="Имя:" />
+            <Label layoutX="432.0" layoutY="20.0" text="Label 1" />
+            <Label layoutX="311.0" layoutY="44.0" text="Расширения:" />
+            <Label layoutX="432.0" layoutY="44.0" text="Label 2" />
+            <Label layoutX="311.0" layoutY="68.0" text="Путь:" />
+            <Label layoutX="432.0" layoutY="68.0" text="Label 3" />
+            <Label layoutX="311.0" layoutY="93.0" text="Размер:" />
+            <Label layoutX="432.0" layoutY="93.0" text="Label 4" />
+            <Label layoutX="311.0" layoutY="120.0" text="Дата скачивания:" />
+            <Label layoutX="432.0" layoutY="120.0" text="Label 5" />
+            <TableView fx:id="table" layoutX="25.0" prefHeight="155.0" prefWidth="237.0">
+              <columns>
+                <TableColumn fx:id="list" prefWidth="236.0" resizable="false" text="Имя файла:" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="28.0" prefWidth="613.0">
+         <children>
+            <Button fx:id="btnDelAll" layoutX="147.0" layoutY="2.0" mnemonicParsing="false" onAction="#deleteAll" prefHeight="25.0" prefWidth="116.0" text="Удалить все" AnchorPane.leftAnchor="147.0" />
+            <Button fx:id="btnDel" layoutX="14.0" layoutY="2.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="116.0" text="Удалить" AnchorPane.leftAnchor="25.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
